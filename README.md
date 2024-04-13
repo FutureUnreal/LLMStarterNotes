@@ -15,7 +15,9 @@
 
 ## 学习资源
 
-- 官方文档
+- [官方文档](https://github.com/FutureUnreal/LLMStarterNotes/blob/main/resources/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3.md)
+- 在线教程和课程
+- 开源项目和案例分析
 - 在线教程和课程
 - 开源项目和案例分析
 - 技术博客和论坛讨论
