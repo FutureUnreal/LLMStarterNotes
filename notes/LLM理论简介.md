@@ -22,7 +22,8 @@
 - 星火大模型：科大讯飞发布，支持多种自然语言处理任务。
 - LLaMA 系列：Meta 开源的基础语言模型，强调使用公开数据集训练。
 - 通义千问：阿里巴巴基于“通义”大模型研发的开源模型。
-  
+![timeline](https://github.com/FutureUnreal/LLMStarterNotes/blob/main/resources/imgs/timeline.jpg?raw=true)
+（该图来源于[Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models?tab=readme-ov-file)）
 
 ## LLM 的能力与特点 ✨
 - 涌现能力：大型模型在解决复杂任务时表现出的潜力。
@@ -35,3 +36,16 @@
 - 自然语言交互：提升人机交互的自然度和流畅性。
 - 教育和研究：辅助学习和研究，提供丰富的信息和解答。
 - 商业应用：从文本生成到客户服务，LLM 正在变革多个行业。
+
+> ## 问题&思考
+>
+>  **大型语言模型（LLM）作为概率模型是否能实现通用人工智能（AGI）？** 
+>
+> - **AGI 的定义和追求**：AGI 旨在创建能够在广泛认知任务上与人类相当或更优的人工智能系统。目前，多个研究机构和公司正在朝这一目标努力。[Wikipedia. Artificial general intelligence](https://en.wikipedia.org/wiki/Artificial_general_intelligence)
+>
+> - **涌现能力**：一个复杂系统（如AGI）可能在微观层面上充满不确定性和概率性，但在宏观层面上展现出明确的智能和逻辑。LLM在处理统计归纳和因果推理时展现出的涌现能力，展现了量变到质变的过程，以及在足够复杂度和数据量下，模型可能会“顿悟”出超越其训练数据的本质规律。
+>
+> - **大型语言模型与智能系统特征**：智能行为有许多特征。例如，理解世界的能力、理解物理世界的能力、记忆和检索事物的能力、持久性记忆、推理能力和计划能力。这是智能系统或实体、人类、动物的四个基本特征。LLM 无法做到这些，或者只能以非常原始的方式做到这些，而且并不真正了解物理世界。LLM 并没有真正的持久记忆，无法真正推理，当然也无法计划。因此，如果你期望系统变得智能，但却无法做这些事情，那么你就犯了一个错误。这并不是说自回归 LLM 没有用。它们当然有用，但它们并不有趣，我们无法围绕它们构建整个应用程序生态系统。但作为迈向人类水平智能的通行证，它们缺少必要的组成部分。
+> 通过感官输入，我们看到的信息比通过语言看到的信息多得多，尽管我们有直觉，但我们学到的大部分内容和知识都是通过我们的观察和与现实世界的互动，而不是通过通过语言。我们在生命最初几年学到的一切，当然还有动物学到的一切，都与语言无关。
+> [Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast](https://link.zhihu.com/?target=https%3A//youtu.be/5t1vTLU7s40%3Ffeature%3Dshared)
+>
