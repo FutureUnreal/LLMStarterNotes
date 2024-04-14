@@ -49,3 +49,9 @@
 > 通过感官输入，我们看到的信息比通过语言看到的信息多得多，尽管我们有直觉，但我们学到的大部分内容和知识都是通过我们的观察和与现实世界的互动，而不是通过通过语言。我们在生命最初几年学到的一切，当然还有动物学到的一切，都与语言无关。
 > [Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI | Lex Fridman Podcast](https://link.zhihu.com/?target=https%3A//youtu.be/5t1vTLU7s40%3Ffeature%3Dshared)
 >
+
+
+
+
+
+

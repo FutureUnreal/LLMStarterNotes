@@ -28,6 +28,7 @@
 ## 学习心得
 
 定期更新学习心得和遇到的问题，以及如何解决这些问题的方法。
+- [大型语言模型（LLM）作为概率模型是否能实现通用人工智能（AGI）？](https://github.com/FutureUnreal/LLMStarterNotes/blob/main/notes/LLM%E7%90%86%E8%AE%BA%E7%AE%80%E4%BB%8B.md#%E9%97%AE%E9%A2%98%E6%80%9D%E8%80%83)
 
 ## 联系方式
 
