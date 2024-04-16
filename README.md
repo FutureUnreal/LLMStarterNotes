@@ -21,14 +21,14 @@
 
 ## 笔记目录
 
-- `notes/` - 存放我的学习笔记和总结。
+- `notes/` - 存放学习笔记和总结。
 - `code/` - 包含在学习过程中编写或参考的代码示例。
 - `resources/` - 收集的学习资源和有用的链接。
 
 ## 学习心得
 
 定期更新学习心得和遇到的问题，以及如何解决这些问题的方法。
-- [大型语言模型（LLM）作为概率模型是否能实现通用人工智能（AGI）？](https://github.com/FutureUnreal/LLMStarterNotes/blob/main/notes/LLM%E7%90%86%E8%AE%BA%E7%AE%80%E4%BB%8B.md#%E9%97%AE%E9%A2%98%E6%80%9D%E8%80%83)
+- [大型语言模型（LLM）作为概率模型是否能实现通用人工智能（AGI）？](https://github.com/FutureUnreal/LLMStarterNotes/blob/main/notes/Task01-%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%AE%80%E4%BB%8B.md#%E9%97%AE%E9%A2%98%E6%80%9D%E8%80%83)
 
 ## 联系方式
 
