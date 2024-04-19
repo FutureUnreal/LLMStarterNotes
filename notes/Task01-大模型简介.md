@@ -91,4 +91,4 @@
 8. **维护与持续改进：** 监测系统性能和用户反馈，定期更新知识库和系统改进。
 
 # 五、开发环境配置(已提交至课程项目)
-[参考链接](https://github.com/datawhalechina/llm-universe/blob/main/docs/C1/7.GitHub%20Codespaces%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.md)
+[参考链接](https://github.com/datawhalechina/llm-universe/blob/main/docs/C1/6.GitHub%20Codespaces%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%EF%BC%88%E9%80%89%E4%BF%AE%EF%BC%89.md)
