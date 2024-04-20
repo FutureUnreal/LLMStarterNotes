@@ -29,6 +29,7 @@
 
 定期更新学习心得和遇到的问题，以及如何解决这些问题的方法。
 - [大型语言模型（LLM）作为概率模型是否能实现通用人工智能（AGI）？](https://github.com/FutureUnreal/LLMStarterNotes/blob/main/notes/Task01-%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%AE%80%E4%BB%8B.md#%E9%97%AE%E9%A2%98%E6%80%9D%E8%80%83)
+- [如何根据项目需求设计Prompt、调整Temperature，并选取最合适的大模型？](https://github.com/FutureUnreal/LLMStarterNotes/blob/main/notes/Task02-%E4%BD%BF%E7%94%A8API%E5%BC%80%E5%8F%91.md#%E9%97%AE%E9%A2%98%E6%80%9D%E8%80%83)
 
 ## 联系方式
 
