@@ -128,6 +128,7 @@ _ = load_dotenv(find_dotenv())
   ```
 
 - **讯飞星火API**：提供SDK方式和WebSocket方式调用
+
   1.通过 WebSocket 调用 (自动化下载调用示例并修改)
   ```python
   import requests
