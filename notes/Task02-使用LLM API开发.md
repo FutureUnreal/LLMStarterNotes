@@ -84,6 +84,45 @@ _ = load_dotenv(find_dotenv())
 
   get_completion("你好")
   ```
+
+- **Claude API**：通过设置model、messages、max_tokens、temperature等参数调用
+    ```python
+    import anthropic
+
+    # 初始化Anthropic客户端，API密钥通过环境变量获取
+    client = anthropic.Anthropic(
+        api_key=os.environ.get("ANTHROPIC_API_KEY")
+    )
+
+    def send_message_to_claude(prompt, model="claude-3-opus-20240229", max_tokens=1024, temperature=0):
+        """
+        向Claude模型发送请求并获取回复
+
+        参数:
+        - prompt: 用户输入的提示信息
+        - model: 指定使用的Claude模型，默认是"claude-3-opus-20240229"
+        - max_tokens: 控制回复的最大长度，默认为1024
+        - temperature: 控制回复的随机性，默认为0，代表最小随机性
+
+        返回:
+        - Claude模型的回复文本
+        """
+        # 构建消息对象，包括用户角色和内容
+        messages = [{"role": "user", "content": prompt}]
+        
+        response = client.messages.create(
+            model=model,
+            max_tokens=max_tokens,
+            temperature=temperature,
+            messages=messages
+        )
+
+        return response.content
+
+    send_message_to_claude("你好！今天感觉如何？")
+
+    ```
+
 - **文心一言API**：模型人设通过system字段传入
   ```python
   import qianfan  # 导入qianfan库，用于调用文心API
@@ -160,6 +199,8 @@ _ = load_dotenv(find_dotenv())
 
   print('Done!')
   ```
+  [Python 调用示例](https://xfyun-doc.xfyun.cn/lc-sp-sparkAPI-1709535448185.zip)
+
   2.通过 SDK 方式调用
   ```python
   from sparkai.llm.llm import ChatSparkLLM, ChunkPrintHandler
