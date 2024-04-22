@@ -277,7 +277,7 @@ Markdown文档的读取方法与PDF类似，使用了UnstructuredMarkdownLoader�
 ```python
 from langchain.document_loaders.markdown import UnstructuredMarkdownLoader
 
-loader = UnstructuredMarkdownLoader("../../data_base/knowledge_db/prompt_engineering/1. 简介 Introduction.md")
+loader = UnstructuredMarkdownLoader("../../data_base/xxx.md")
 md_pages = loader.load()
 ```
 
