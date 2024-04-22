@@ -1,17 +1,15 @@
-# 使用LLM API开发应用
+# 一、基本概念
 
-## 一、基本概念
-
-### Prompt 的理解
+## Prompt 的理解
 - **概念**：Prompt 最初设计为NLP下游任务的输入模板，现已成为给大模型所有输入的统称。
 - **例子**：在ChatGPT中提出的问题是一个Prompt，ChatGPT的回复是Completion。
 - **理解**：Prompt是向大模型提出的指令或问题，Completion是大模型的答案或反馈。
 
-### Temperature 参数的作用
+## Temperature 参数的作用
 - **概念**：Temperature用于控制LLM生成结果的随机性与创造性。
 - **取值**：范围为0~1，接近0产生保守文本，接近1时产生创意多样的文本。
 
-### System Prompt 的定义和应用
+## System Prompt 的定义和应用
 - **概念**：System Prompt旨在提升用户体验，对模型的回复有持久影响。
 - **区分**：System Prompt在会话中比User Prompt具有更高的重要性。
 - **例子**：通过System Prompt设定模型人设，然后通过User Prompt提问。
@@ -23,10 +21,10 @@
     ```
 - **理解**：System Prompt在会话中设定一个“基调”或“角色”，引导模型响应。
 
-## 二、使用 LLM API (做个记录，方便以后快速上手使用)
+# 二、使用 LLM API (做个记录，方便以后快速上手使用)
 
-### 调用示例
-#### 1. 读取 API Key
+## 调用示例
+### 1. 读取 API Key
 ```python
 import os
 from dotenv import load_dotenv, find_dotenv
@@ -36,7 +34,7 @@ from dotenv import load_dotenv, find_dotenv
 # load_dotenv() 读取该 .env 文件，并将其中的环境变量加载到当前的运行环境中  
 _ = load_dotenv(find_dotenv())
 ```
-#### 2. 不同 API 调用方法
+### 2. 不同 API 调用方法
 
 - **ChatGPT API**：通过设置model、messages、temperature等参数调用
   ```python
@@ -319,34 +317,36 @@ _ = load_dotenv(find_dotenv())
   get_completion("你好")
   ```
 
-## 三、Prompt Engineering
+# 三、Prompt Engineering
 
-### Prompt Engineering 的意义
+## Prompt Engineering 的意义
 - **定义**: Prompt（提示）是用户与大模型交互输入的名称，即用户给大模型的输入。
 - **重要性**: 对于大语言模型（LLM），一个好的Prompt设计极大地决定了模型的性能极限。通过有效的Prompt使用，可以充分发挥LLM的能力。
 - **设计原则**: 设计高效Prompt的关键在于编写清晰、具体的指令，并给予模型充足的思考时间。
 
-### Prompt 设计的原则及使用技巧
-#### 1. 编写清晰、具体的指令
+## Prompt 设计的原则及使用技巧
+### 1. 编写清晰、具体的指令
 - **清晰明确的需求**: Prompt需要清楚表达需求，提供充足的上下文，以便模型准确理解意图。
 - **使用分隔符**: 利用不同的标点符号作为分隔符，明确区分指令、上下文、输入等，避免混淆。
 - **结构化输出**: 当需要结构化输出（如JSON格式）时，明确指定格式。
 - **条件检查**: 告诉模型先检查假设条件，不满足则指出并停止执行。
 - **少量示例**: 通过提供参考样例（少样本提示），帮助模型了解期望的输出样式。
 
-#### 2. 给模型时间去思考
+### 2. 给模型时间去思考
 - **推理时间**: 给予语言模型充足的时间进行深入思考，通过Prompt引导模型进行逐步推理。
 - **指定完成任务所需的步骤**: 明确给出完成任务的步骤，引导模型逐步解决问题。
 - **指导模型自主思考**: 在下结论前，先指导模型找出自己的解法，然后再进行对比评估。
 
-### 语言模型可能产生的问题
+## 语言模型可能产生的问题
 - **幻觉（Hallucination）**: 语言模型可能构造出似是而非的细节，称为“幻觉”，这是其一大缺陷。
 - **应对策略**: 认识到幻觉问题的存在，并采取优化Prompt、引入外部知识等措施来缓解，以开发出更可靠的应用。
 
-## 问题&思考❓
-- Prompt的设计对于激发LLM的潜力非常关键，那么有没有什么通用的原则或指南来指导如何设计有效的Prompt？
-  - [OpenAi 官方指南](https://platform.openai.com/docs/guides/prompt-engineering)
-- 在实际应用中，如何根据项目的需要来决定Temperature的值？是否有一些经验规则或者是要通过大量的尝试和错误来确定？
-  - [大语言模型(LLM)中的温度(Temperature)和Top_P怎么调](https://zhuanlan.zhihu.com/p/666315413)
-- 在不同的应用场景中，应该如何选择最合适的大模型
-  - 成本、性能、易用性、生态、支持、安全、隐私
+---
+
+> # 问题&思考❓
+> - Prompt的设计对于激发LLM的潜力非常关键，那么有没有什么通用的原则或指南来指导如何设计有效的Prompt？
+>   w- [OpenAi 官方指南](https://platform.openai.com/docs/guides/prompt-engineering)
+> - 在实际应用中，如何根据项目的需要来决定Temperature的值？是否有一些经验规则或者是要通过大量的尝试和错误来确定？
+>   - [大语言模型(LLM)中的温度(Temperature)和Top_P怎么调](https://zhuanlan.zhihu.com/p/666315413)
+> - 在不同的应用场景中，应该如何选择最合适的大模型
+>   - 成本、性能、易用性、生态、支持、安全、隐私
