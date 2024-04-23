@@ -263,7 +263,7 @@ print(f'embedding（前10）为: {response.data[0].embedding[:10]}')
 from langchain.document_loaders.pdf import PyMuPDFLoader
 
 # 实例化PyMuPDFLoader，指定pdf文档路径
-loader = PyMuPDFLoader("../../data_base/knowledge_db/pumkin_book/pumpkin_book.pdf")
+loader = PyMuPDFLoader("../../resources/data/pumpkin_book.pdf")
 
 # 调用load函数进行文档加载
 pdf_pages = loader.load()
@@ -334,7 +334,7 @@ _ = load_dotenv(find_dotenv())
 
 # 获取所有文件路径
 file_paths = []
-folder_path = '../../data_base/knowledge_db'
+folder_path = '../../resources/data'
 for root, dirs, files in os.walk(folder_path):
     for file in files:
         file_path = os.path.join(root, file)
@@ -352,7 +352,7 @@ from zhipuai_embedding import ZhipuAIEmbeddings  # 假设这是自定义的智�
 embedding = ZhipuAIEmbeddings()
 
 # 定义持久化路径
-persist_directory = '../../data_base/vector_db/chroma'
+persist_directory = '../../resources/data/vector_db/chroma'
 
 # 删除旧的数据库文件
 !rm -rf '../../data_base/vector_db/chroma'
