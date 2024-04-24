@@ -20,9 +20,12 @@
 
 # 三、部署知识库助手
 [streamlit官方文档](https://docs.streamlit.io/)
+
 修改UI，部署成功！
 ![](../resources/imgs/C4-sreamlit.png)
+
 代码
+
 ```python
 import streamlit as st
 from langchain_openai import ChatOpenAI
